@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Pertemuan X - IFRAME</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        header {
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+        }
+        h1 {
+            color: #007bff;
+            font-size: 24px;
+            margin: 0 0 5px 0;
+        }
+        .identity {
+            font-size: 14px;
+            color: #555;
+            margin: 0;
+        }
+        .question-box {
+            background: #f8f9fa;
+            border-left: 4px solid #007bff;
+            padding: 15px 20px;
+            margin-bottom: 20px;
+            border-radius: 0 4px 4px 0;
+        }
+        h3 {
+            margin-top: 0;
+            color: #333;
+        }
+        p, li {
+            line-height: 1.6;
+        }
+        pre {
+            background: #272822;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            font-family: Consolas, Monaco, monospace;
+            font-size: 13px;
+        }
+        .iframe-container {
+            margin-top: 15px;
+            text-align: center;
+        }
+        iframe {
+            width: 100%;
+            height: 500px;
+            border: 2px solid #007bff;
+            border-radius: 6px;
+            background: #fff;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Pemrograman Web 1 - Tugas Pertemuan X (IFRAME)</h1>
+        <p class="identity"><strong>Nama:</strong> Muhammad Ichsan Fachrulrozi | <strong>NIM:</strong> 241011400235</p>
+    </header>
+
+    <!-- Soal Nomor 1 -->
+    <div class="question-box">
+        <h3>1. Apa gunanya IFRAME?</h3>
+        <p><strong>Jawaban:</strong> IFRAME (Inline Frames) berfungsi untuk meng-embed (menyisipkan) dokumen lain atau menampilkan konten dari halaman web lain ke dalam halaman web yang sedang aktif, seperti video, peta, profil tokoh, atau media interaktif lainnya.</p>
+    </div>
+
+    <!-- Soal Nomor 2 -->
+    <div class="question-box">
+        <h3>2. Apa bedanya FRAME dan IFRAME?</h3>
+        <p><strong>Jawaban:</strong></p>
+        <ul>
+            <li><strong>FRAME:</strong> Digunakan untuk membagi seluruh jendela browser menjadi beberapa bagian terpisah (menggunakan elemen <code>&lt;frameset&gt;</code>). Sifatnya kaku dan sudah tidak didukung di HTML5.</li>
+            <li><strong>IFRAME:</strong> Berfungsi sebagai bingkai inline yang dapat disisipkan secara fleksibel di dalam bagian <code>&lt;body&gt;</code> sebuah halaman web biasa tanpa mengganggu struktur layout utama.</li>
+        </ul>
+    </div>
+
+    <!-- Soal Nomor 3 -->
+    <div class="question-box">
+        <h3>3. Tuliskan bentuk umum perintah IFRAME secara lengkap?</h3>
+        <p><strong>Jawaban:</strong> Bentuk umum penulisan perintah IFRAME beserta atribut utamanya adalah sebagai berikut:</p>
+        <pre>&lt;iframe src="URL" height="500px" width="100%" frameborder="1" name="nama_iframe"&gt;
+    &lt;p&gt;Tulisan ini akan tampil jika browser tidak mendukung Iframe&lt;/p&gt;
+&lt;/iframe&gt;</pre>
+    </div>
+
+    <!-- Soal Nomor 4 -->
+    <div class="question-box">
+        <h3>4. Berikan contoh dalam bentuk tampilan website penggunaan IFRAME?</h3>
+        <p><strong>Jawaban:</strong> Di bawah ini adalah contoh penerapan <code>&lt;iframe&gt;</code> untuk menyisipkan halaman ensiklopedia Wikipedia mengenai tokoh publik (B. J. Habibie) langsung ke dalam halaman web:</p>
+        
+        <pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Profil Tokoh Publik - IFRAME&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h2&gt;Profil Tokoh Publik: B. J. Habibie&lt;/h2&gt;
+    &lt;iframe src="https://id.m.wikipedia.org/wiki/B._J._Habibie" width="100%" height="500px" frameborder="1"&gt;
+        &lt;p&gt;Browser Anda tidak mendukung iframe.&lt;/p&gt;
+    &lt;/iframe&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+        <p><strong>Tampilan Hasil dalam Website:</strong></p>
+        
+        <div class="iframe-container">
+            <!-- Iframe Menampilkan Profil Tokoh Publik (Wikipedia B.J. Habibie) -->
+            <iframe src="https://id.m.wikipedia.org/wiki/B._J._Habibie" title="Profil B.J. Habibie di Wikipedia">
+                <p>Browser Anda tidak mendukung Iframe.</p>
+            </iframe>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
